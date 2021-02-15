@@ -348,3 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+src/FileWatcher.Service/.vscode/tasks.json
+src/FileWatcher.Service/.vscode/launch.json

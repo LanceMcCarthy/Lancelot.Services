@@ -5,7 +5,7 @@ A repository of a bunch of my helpful Windows services.
 | Workflow | Status |
 |---------|--------------|
 | Main | ![Main](https://github.com/LanceMcCarthy/Lancelot.Services/workflows/Main/badge.svg) |
-| Release - File Watcher Service | ![Release - File Watcher Service](https://github.com/LanceMcCarthy/Lancelot.Services/workflows/release---file-watcher-service/badge.svg) |
+| Release - File Watcher Service | ![Release - File Watcher Service](https://github.com/LanceMcCarthy/Lancelot.Services/workflows/Release%20-%20File%20Watcher%20Service/badge.svg) |
 
 You will find separate READMEs for each service the project's root folder. Below are concise getting started options.
 
