@@ -27,11 +27,8 @@ jobs:
 
     - name: Publish
       run: dotnet publish src/FileWatcher.Service/FileWatcher.Service.csproj --configuration Release --framework net5.0-windows10.0.17763.0 --runtime win10-x86 -p:PublishSingleFile=true
-    
-    - name: Create GitHub release
-      uses: Roang-zero1/github-upload-release-artifacts-action@master
+ 
+    - uses: actions/upload-artifact@v2
       with:
-        args:
-        - src\FileWatcher.Service\bin\Release\net5.0-windows10.0.17763.0\
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        name: FileWatcherService
+        path: src/FileWatcher.Service/bin/Release/net5.0-windows10.0.17763.0/win10-x86/publish
