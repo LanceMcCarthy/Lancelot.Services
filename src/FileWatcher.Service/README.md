@@ -6,17 +6,22 @@ This service is simple and reliable hand-off helper that will copy any file chan
 
 `FileWatcher.Service.exe C:\Source C:\Destination -recurive=true -overwrite=false`
 
-> Source and Destination are required. Defaults: Recurive=true, Overwrite=false (will skip)
+> Source and Destination are required, the flags --recursive defaults to true and --overwrite overwrite is false (skips).
 
 ## Download/Compile
 
-First order of business is to downloaded (or compile) the FileWatcher.Service.exe and related files. Whereever you put it, you will want it to be in a safe location so it doesnt get deleted. I recommend creating a simple folder on your C:/ drive just to put services files into.
+First order of business is to get FileWatcher.Service.exe and its dependencies. The easiest options are:
 
-For example, I created `C:\MyServices\FileWatcherService\` and copied all the files into it:
+- [Option 1] - Download from the artifacts from the GitHub Actions build result or from the GitHub Releases page.
+    - Go to [File Watcher Actions](https://github.com/LanceMcCarthy/Lancelot.Services/actions?query=workflow%3A%22Release+-+File+Watcher+Service%22) tab, select the newest build with a green check, then download the Artifacts
+- [Option 2] - Compile the project in Visual Studio and 
+  - Find the files in the `/bin/Release/` folder
+
+Once you get the files, you will want it to be in a safe location so it doesnt get accidentally deleted. I recommend creating a dedicated folder on your C:/ drive. For example, I created `C:\MyServices\FileWatcherService\` and copied all the files into it:
 
 ![image](https://user-images.githubusercontent.com/3520532/107980614-97ef1780-6f8e-11eb-8872-d0622a5c60a5.png)
 
-## Setup
+## Install - Setup
 
 Once you have the files in a known location, you will now have a path to **FileWatcher.Service.exe**, you can start up the service.
 
@@ -39,7 +44,7 @@ Once it is started, you will be able to see it in Task Manager's Services tab:
 
 That service will now automatically copy any new files/file changes to the destination folder!
 
-## Remove Stop/Remove
+## Uninstall - Stop and Delete Service
 
 To remove and delete the service, take the following steps
 
