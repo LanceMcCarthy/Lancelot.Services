@@ -9,13 +9,7 @@ A repository of a bunch of my helpful Windows services. Find each service's docu
 
 # File Watcher Service
 
-![Release - File Watcher Service](https://github.com/LanceMcCarthy/Lancelot.Services/workflows/Release%20-%20File%20Watcher%20Service/badge.svg).
-
 This service is simple and reliable hand-off helper that will copy any file changes in a source folder to a destination folder.
-
-`FileWatcher.Service.exe C:\Source C:\Destination -recurive=true -overwrite=false`
-
-> Source and Destination are required, the flags --recursive defaults to true and --overwrite overwrite is false (skips).
 
 ## Download/Compile
 
